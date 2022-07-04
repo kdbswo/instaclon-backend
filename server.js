@@ -5,32 +5,38 @@ const client = new PrismaClient();
 
 const typeDefs = gql`
   type Movie {
-    id: Int
-    title: String
-    year: Int
+    id: Int!
+    title: String!
+    year: Int!
+    genre: String
+    createAt: String!
+    updateAt: String!
   }
   type Query {
     movies: [Movie]
-    movie: Movie
+    movie(id: Int!): Movie
   }
   type Mutation {
-    createMovie(title: String!): Boolean
+    createMovie(title: String!, year: Int!, genre: String): Movie
     deleteMovie(title: String!): Boolean
   }
 `;
 
 const resolvers = {
   Query: {
-    movies: () => [],
-    movie: () => ({ title: "hello", year: 2021 }),
+    movies: () => client.movie.findMany(),
+    movie: (_, { id }) => ({ title: "hello", year: 2021 }),
   },
   Mutation: {
-    createMovie: (_, { title }) => {
-      console.log(title);
-      return true;
-    },
-    deleteMovie: (_, { title }) => {
-      console.log(title);
+    createMovie: (_, { title, year, genre }) =>
+      client.movie.create({
+        data: {
+          title,
+          year,
+          genre,
+        },
+      }),
+    deleteMovie: (_, { id }) => {
       return true;
     },
   },
