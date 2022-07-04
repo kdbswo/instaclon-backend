@@ -1,27 +1,37 @@
 {
   "name": "instaclone",
   "version": "1.0.0",
-  "description": "",
+  "description": "Instaclone Backend.",
   "scripts": {
-    "dev": "nodemon --exec babel-node server"
+    "dev": "nodemon --exec babel-node server",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kdbswo/instaclone-backend.git"
+    "url": "git+https://github.com/kdbswo/instaclone-backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^4.0.0",
-    "apollo-server": "^2.25.2",
-    "graphql": "^15.4.0"
+    "apollo-server": "^2.25.4",
+    "babel-register": "^6.26.0",
+    "graphql": "^15.8.0",
+    "npm": "^6.14.12"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/node": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
     "nodemon": "^2.0.18",
     "prisma": "^4.0.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/kdbswo/instaclone-backend/issues"
+  },
+  "homepage": "https://github.com/kdbswo/instaclone-backend#readme",
+  "main": "server.js"
 }
