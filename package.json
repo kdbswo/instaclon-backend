@@ -4,7 +4,7 @@
   "description": "Instaclone Backend.",
   "scripts": {
     "dev": "nodemon --exec babel-node server",
-    "migrate": "npx prisma migrate dev --preview-feature"
+    "migrate": "npx prisma migrate dev"
   },
   "repository": {
     "type": "git",
