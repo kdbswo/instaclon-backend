@@ -8,6 +8,9 @@ const loadResolvers = loadFilesSync(`${__dirname}/**/*.{queries,mutations}.js`);
 const typeDefs = mergeTypeDefs(loadedTypes);
 const resolvers = mergeResolvers(loadResolvers);
 
-const schema = makeExecutableSchema({ typeDefs, resolvers });
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
+});
 
 export default schema;
