@@ -6,7 +6,7 @@ PostgreSQL
 
 ## User:
 
--[ ]  Create Account
+-[x]  Create Account
 -[ ]  See Profile
 -[ ]  Login
 -[ ]  Edit Profile
