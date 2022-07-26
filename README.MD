@@ -8,7 +8,7 @@ PostgreSQL
 
 -[x]  Create Account
 -[x]  See Profile
--[ ]  Login
+-[x]  Login
 -[ ]  Edit Profile
 -[ ]  Follow User
 -[ ]  Unfollow User
