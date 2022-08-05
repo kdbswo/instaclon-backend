@@ -7,16 +7,16 @@ export default {
     editProfile: async (
       _,
       { firstName, lastName, username, email, password: newPassword },
-      { token }
+      { loggedInUser }
     ) => {
-      
+      console.log(loggedInUser);
       let uglyPassword = null;
       if (newPassword) {
         uglyPassword = await bcrypt.hash(newPassword, 10);
       }
-      const updatedUser = await client.user.update({
+      const updatedUser =  await client.user.update({
         where: {
-          id,
+          id:  loggedInUser.id,
         },
         data: {
           firstName,
