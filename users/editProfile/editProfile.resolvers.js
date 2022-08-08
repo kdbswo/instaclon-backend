@@ -4,8 +4,8 @@ import { protectedResolver } from "../users.utils";
 
 const resolverFn = async (
   _,
-  { firstName, lastName, username, email, password: newPassword },
-  { loggedInUser, protectResolver }
+  { firstName, lastName, username, email, password: newPassword, bio },
+  { loggedInUser }
 ) => {
   let uglyPassword = null;
   if (newPassword) {
@@ -20,6 +20,7 @@ const resolverFn = async (
       lastName,
       username,
       email,
+      bio,
       ...(uglyPassword && { password: uglyPassword }), // uglyPassword가 참이면 password: uglyPassword 를 반환
     },
   });
