@@ -17,7 +17,7 @@ const resolverFn = async (
       process.cwd() + "/uploads/" + newFilename
     );
     readStream.pipe(writeStream);
-    avatarUrl = `http://localhost:4000//static/${newFilename}`;
+    avatarUrl = `http://localhost:4000/static/${newFilename}`;
   }
 
   let uglyPassword = null;
