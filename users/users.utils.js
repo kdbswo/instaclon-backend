@@ -17,7 +17,7 @@ export const getUser = async (token) => {
     return null;
   }
 };
-
+/** error 메시지 보호 */
 export function protectedResolver(ourResolver) {
   return function (root, args, context, info) {
     if (!context.loggedInUser) {
