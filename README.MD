@@ -13,7 +13,8 @@ PostgreSQL
 -[x]  Change Avatar (Image Upload)
 -[x]  Follow User
 -[x]  Unfollow User
--[ ]  see Followers and see Following w/ Pagination
+-[x]  see Followers w/ Pagination
+-[ ]  see Following w/ Pagination
 -[ ]  Computed Field
 -[ ]  Search User
 
