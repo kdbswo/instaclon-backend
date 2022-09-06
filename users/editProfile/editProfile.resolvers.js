@@ -35,7 +35,7 @@ const resolverFn = async (
       username,
       email,
       bio,
-      ...(uglyPassword && { password: uglyPassword }), // uglyPassword가 참이면 password: uglyPassword 를 반환
+      ...(uglyPassword && { password: uglyPassword }), // uglyPassword가 참(존재한다면)이면 password: uglyPassword 를 반환
       ...(avatarUrl && { avatar: avatarUrl }),
     },
   });

@@ -14,7 +14,7 @@ PostgreSQL
 -[x]  Follow User
 -[x]  Unfollow User
 -[x]  see Followers w/ Pagination
--[ ]  see Following w/ Pagination
+-[x]  see Following w/ Pagination
 -[ ]  Computed Field
 -[ ]  Search User
 
