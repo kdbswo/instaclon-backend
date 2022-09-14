@@ -21,7 +21,7 @@ export default {
           },
         });
         if (existingUser) {
-          throw new Error("This username or password is already taken.");
+          throw new Error("This username or email is already taken.");
         }
         const uglyPassword = await bcrypt.hash(password, 10); //보안
         await client.user.create({
