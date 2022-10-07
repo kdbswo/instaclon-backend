@@ -16,6 +16,7 @@ PostgreSQL
 -[x]  see Followers w/ Pagination
 -[x]  see Following w/ Pagination
 -[x]  Computed Field
+-[ ]  seePhoto Comments
 -[x]  Search User
 
 ## Photos
@@ -28,9 +29,14 @@ PostgreSQL
 -[x]  Like / Unlike Photo
 -[x]  See Photo Likes
 -[x]  See Feed
+-[ ]  Is Mine (Delete Photo)
 
 ## Comments
 
--[ ]  Comment on Photo
+-[x]  Comment on Photo
 -[ ]  Edit Comment
--[ ]  Delete Coment
+-[ ]  Delete Coment (Is Mine)
+
+## Extras
+
+-[ ]  S3 Image Upload
