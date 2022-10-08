@@ -37,7 +37,11 @@ PostgreSQL
 
 -[x]  Comment on Photo
 -[x]  Delete Coment
--[ ]  Edit Comment
+-[x]  Edit Comment
+
+## Refactor
+
+-[ ]  Mutation Responses
 
 ## Extras
 
