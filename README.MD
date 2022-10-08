@@ -30,7 +30,8 @@ PostgreSQL
 -[x]  See Photo Likes
 -[x]  See Feed
 -[x]  See Photo Comments
--[ ]  Is Mine (Delete Photo)
+-[x]  Is Mine
+-[ ]  Delete Photo
 
 ## Comments
 
