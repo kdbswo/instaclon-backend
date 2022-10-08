@@ -29,6 +29,7 @@ PostgreSQL
 -[x]  Like / Unlike Photo
 -[x]  See Photo Likes
 -[x]  See Feed
+-[x]  See Photo Comments
 -[ ]  Is Mine (Delete Photo)
 
 ## Comments
