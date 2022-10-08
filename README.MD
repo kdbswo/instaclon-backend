@@ -31,13 +31,13 @@ PostgreSQL
 -[x]  See Feed
 -[x]  See Photo Comments
 -[x]  Is Mine
--[ ]  Delete Photo
+-[x]  Delete Photo
 
 ## Comments
 
 -[x]  Comment on Photo
+-[x]  Delete Coment
 -[ ]  Edit Comment
--[ ]  Delete Coment (Is Mine)
 
 ## Extras
 
