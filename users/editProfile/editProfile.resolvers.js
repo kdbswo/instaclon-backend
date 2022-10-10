@@ -2,7 +2,7 @@ import { createWriteStream } from "fs";
 import bcrypt from "bcrypt";
 import client from "../../client";
 import { protectedResolver } from "../users.utils";
-import { uploadToS3 } from "../../shared/shared.utils";
+import { delPhotoFromS3, uploadToS3 } from "../../shared/shared.utils";
 
 const resolverFn = async (
   _,
@@ -10,7 +10,9 @@ const resolverFn = async (
   { loggedInUser }
 ) => {
   let avatarUrl = null;
+
   if (avatar) {
+    await delPhotoFromS3(loggedInUser.avatar, "avatars");
     avatarUrl = await uploadToS3(avatar, loggedInUser.id, "avatars");
     // const { filename, createReadStream } = await avatar;
     // const newFilename = `${loggedInUser.id}-${Date.now()}-${filename}`;

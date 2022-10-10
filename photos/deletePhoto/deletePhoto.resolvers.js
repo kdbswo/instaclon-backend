@@ -1,4 +1,5 @@
 import client from "../../client";
+import { delPhotoFromS3 } from "../../shared/shared.utils";
 import { protectedResolver } from "../../users/users.utils";
 
 export default {
@@ -6,7 +7,7 @@ export default {
     deletePhoto: protectedResolver(async (_, { id }, { loggedInUser }) => {
       const photo = await client.photo.findUnique({
         where: { id },
-        select: { userId: true },
+        select: { userId: true, file: true },
       });
       if (!photo) {
         return {
@@ -19,6 +20,7 @@ export default {
           error: "Not authorized",
         };
       } else {
+        await delPhotoFromS3(photo.file, "uploads");
         await client.photo.delete({
           where: { id },
         });
