@@ -52,5 +52,6 @@ PostgreSQL
 
 -[x] See Rooms
 -[x] Send Messages (Create Room)
--[ ] See Room
+-[x] See Room
+-[ ] Computed Fields
 -[ ] Realtime Messages
