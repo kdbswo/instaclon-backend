@@ -50,7 +50,6 @@ PostgreSQL
 
 ## DMs
 
--[ ] Create Room
--[ ] Get Room
--[ ] Send Messages
+-[x] See Room
+-[ ] Send Messages (Create Room)
 -[ ] Realtime Messages
