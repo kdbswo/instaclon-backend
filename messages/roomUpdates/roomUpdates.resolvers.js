@@ -1,3 +1,4 @@
+import { NEW_MESSAGE } from "../../constants";
 import pubsub from "../../pubsub";
 
 export default {
