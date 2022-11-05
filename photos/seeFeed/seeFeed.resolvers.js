@@ -8,7 +8,13 @@ export default {
         where: {
           OR: [
             {
-              user: { followers: { some: { id: loggedInUser.id } } },
+              user: {
+                followers: {
+                  some: {
+                    id: loggedInUser.id,
+                  },
+                },
+              },
             },
             {
               userId: loggedInUser.id,
@@ -16,7 +22,7 @@ export default {
           ],
         },
         orderBy: {
-          createAt: "desc",
+          createdAt: "desc",
         },
       })
     ),
