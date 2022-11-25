@@ -5,9 +5,9 @@ export default gql`
     id: Int!
     user: User!
     photo: Photo!
-    payload: String! 
+    payload: String!
     isMine: Boolean!
-    createAt: String!
-    updateAt: String!
+    createdAt: String!
+    updatedAt: String!
   }
 `;
