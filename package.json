@@ -11,9 +11,6 @@
     "build": "babel src --out-dir build",
     "start": "node build/server"
   },
-  "prisma": {
-    "schema": "prisma/schema.prisma"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kdbswo/instaclone-backend.git"
